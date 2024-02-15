@@ -1,7 +1,12 @@
+p {
+    color: white;
+}
+
 h2 {
-    color:darkred;
+    color:rgb(255, 255, 255);
     /* text-align: center; */
     font-size: 35px;
+    margin-left: 40px;
 }
 
 h4 {
@@ -9,9 +14,14 @@ h4 {
     text-align: center;
 }
 
+html, body {
+    height: max-content;
+}
+
 body {
-    background-color: blanchedalmond;
-    display: grid;
+    background: linear-gradient(rgb(0, 0, 0), rgb(55, 55, 55)) no-repeat;
+    height: 100%;
+    /* display: grid; */
 }
 
 img {
@@ -19,12 +29,14 @@ img {
 }
 
 .header {
-    background-color: bisque;
+    background-color: rgb(5, 5, 5);
     width: 100%;
     /* padding: 20px; */
     display: flex;
-    /* align-items: center; */
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom: 1px solid white;
 }
 
 .inl {
@@ -32,7 +44,7 @@ img {
 }
 
 .div1 {
-    border: 5px dotted rgb(255, 214, 147); 
+    border: 5px dotted rgba(255, 214, 147, 0.371); 
     width: 300px; 
     height: 300px; 
     margin: 10px; 
@@ -44,8 +56,8 @@ img {
 }
 
 .div2 {
-    border: 10px double brown; 
-    width: 300px; 
+    border: 5px solid rgba(255, 214, 147, 0.371); 
+    width: 500px; 
     height: 300px; 
     float: none; 
     /* text-align: center; */
@@ -58,7 +70,7 @@ img {
 }
 
 .div3 {
-    border: 5px dashed rgb(255, 214, 147); 
+    border: 5px dashed rgba(255, 214, 147, 0.371); 
     width: 300px; 
     height: 300px; 
     margin: 10px; 
@@ -83,7 +95,7 @@ img {
 
   .divIMGinfo {
     display: flex;
-    border: 5px dotted rgb(255, 214, 147); 
+    border: 5px dotted rgba(255, 214, 147, 0.371); 
     width: 300px; 
     height: 300px; 
     margin: 10px;
@@ -94,7 +106,7 @@ img {
     /* padding-left: 160px;  */
     display: inline-block; 
     display: flex;
-    border: 5px dashed rgb(0, 0, 0);
+    border: 5px dashed rgba(255, 255, 255, 0.281);
   }
 
   .login{
@@ -106,3 +118,9 @@ img {
     display: flex;
     flex-flow: column;
   }
+
+button{
+    background-color: aqua;
+    font-size: 15px;
+    
+}
