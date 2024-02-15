@@ -134,3 +134,17 @@ button:hover {
     box-shadow: 0 0px 20px 0 rgb(255, 255, 255);
   }
   
+.socialsLogo{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 150px; */
+}
+
+.socialsList{
+    /* height: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
