@@ -1,5 +1,8 @@
 p {
     color: white;
+    font-size: large;
+    font-weight: bold;
+    font-family: Andale Mono, monospace;
 }
 
 h2 {
@@ -7,6 +10,7 @@ h2 {
     /* text-align: center; */
     font-size: 35px;
     margin-left: 40px;
+    font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
 h4 {
@@ -88,11 +92,6 @@ img {
     justify-content: center;
   }
     
-  .child {
-    /* border: 2px solid black; */
-    text-align: center;
-  }
-
   .divIMGinfo {
     display: flex;
     border: 5px dotted rgba(255, 214, 147, 0.371); 
@@ -119,8 +118,19 @@ img {
     flex-flow: column;
   }
 
-button{
-    background-color: aqua;
-    font-size: 15px;
-    
-}
+button {
+    background-color: transparent;
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0);
+    transition: 0.2s;
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+button:hover {
+    /* transform: translate(0px,-3px); */
+    box-shadow: 0 0px 20px 0 rgb(255, 255, 255);
+  }
+  
