@@ -122,6 +122,9 @@ button {
     background-color: transparent;
     box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0);
     transition: 0.2s;
+    border-top: 0px;
+    border-right: 0px;
+    border-color: rgba(255, 255, 255, 0.348);
     border-radius: 10px;
     padding: 10px 15px;
     font-size: 20px;
@@ -136,7 +139,7 @@ button:hover {
   
 .socialsLogo{
     display: flex;
-    flex-flow: column;
+    /* flex-flow: column; */
     justify-content: center;
     align-items: center;
     /* height: 150px; */
@@ -148,3 +151,19 @@ button:hover {
     justify-content: center;
     align-items: center;
 }
+
+a {
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.242);
+    padding: 0px; 
+    text-decoration: none; 
+    color: white;
+    transition: 0.2s;
+   }
+a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.242); 
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: large;
+    
+   }
