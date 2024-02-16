@@ -13,6 +13,13 @@ h2 {
     font-family: Brush Script MT, Brush Script Std, cursive;
 }
 
+h3 {
+    color: white;
+    margin: 0px;
+    font-size: 21px;
+    font-family: Andale Mono, monospace;
+}
+
 h4 {
     color:blueviolet;
     text-align: center;
@@ -109,13 +116,14 @@ img {
   }
 
   .login{
-    border: 5px dotted rgb(107, 168, 159);
+    border: 5px dotted rgba(255, 214, 147, 0.371);
     height: 300px;
-    width: 900px;
+    width: 400px;
     margin-top: 20px;
     padding-left: 20px;
     display: flex;
     flex-flow: column;
+    justify-content: center;
   }
 
 button {
@@ -155,15 +163,41 @@ button:hover {
 a {
     border-radius: 10px;
     border-color: rgba(255, 255, 255, 0.242);
-    padding: 0px; 
     text-decoration: none; 
     color: white;
     transition: 0.2s;
-   }
+}
 a:hover {
     border: 1px solid rgba(255, 255, 255, 0.242); 
     border-radius: 10px;
     transition: 0.5s;
-    font-size: large;
-    
-   }
+}
+
+.passwordInput{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    height: 30px;
+    width: 282px;
+    border-radius: 5px;
+    padding-left: 10px;
+    /* border: 0px; */
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: white;
+    font-family: Andale Mono, monospace;
+}
+
+.passwordInput:focus{
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    transition: 0.2s;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
