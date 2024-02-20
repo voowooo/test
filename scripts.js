@@ -11,15 +11,10 @@ function checkPassword() {
     }
 
 
-
-
-// document.write("Hello world from JS");
-// console.log("Hello world from JS");
-// console.error("test error from JS") обязательно фиксить
-// console.warn("test warn from JS"); /*необязаельно фиксить (просто уведомление)*/
-
 // var можно поменять, const нельзя
 
 // || - или; && - и;
 
-// 7 урок (не смотрел)
+for(var i = 100; i >= 5; i - 2) {
+    console.log(i);
+}
