@@ -15,6 +15,8 @@ function checkPassword() {
 
 // || - или; && - и;
 
-for(var i = 100; i >= 5; i - 2) {
+for(var i = 10; i > 5; i --) {
     console.log(i);
 }
+
+// видео 9
