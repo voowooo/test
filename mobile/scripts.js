@@ -69,29 +69,3 @@ function yesAns() {
     el.innerHTML = ")))))))))";
 }
 
-function getDeviceType() {
-    const userAgent = navigator.userAgent.toLowerCase();
-    const isMobile = /mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent);
-   
-    if (isMobile) {
-        // var css = document.getElementById("css");
-        window.alert(css);
-        window.location.href = 'mobile/index.html';
-        return "mobile";
-    } else {
-        // var css = document.getElementById("css");
-        window.alert(css);
-        // css.href = "mobileStyles.css";
-        // window.location.href = 'mobile/index.html';
-        return "desktop";
-    }
-}
-   
-console.log(getDeviceType()); // "mobile" or "desktop"
-
-
-
-// window.addEventListener('load', () => {
-//     getDeviceType();
-// });
-  

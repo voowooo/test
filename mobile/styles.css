@@ -1,0 +1,226 @@
+p {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    font-family: Andale Mono, monospace;
+}
+
+h2 {
+    color:rgb(255, 255, 255);
+    /* text-align: center; */
+    font-size: 35px;
+    margin-left: 40px;
+    font-family: cursive;
+}
+
+h3 {
+    color: white;
+    margin: 0px;
+    font-size: 21px;
+    font-family: Andale Mono, monospace;
+}
+
+h4 {
+    color:blueviolet;
+    text-align: center;
+}
+
+html, body {
+    height: max-content;
+}
+
+body {
+    background: linear-gradient(rgb(0, 0, 0), rgb(55, 55, 55)) no-repeat;
+    height: 100%;
+    /* display: grid; */
+}
+
+img {
+    margin: 10px;
+}
+
+.header {
+    background-color: rgb(5, 5, 5);
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    border-bottom: 1px solid white;
+}
+
+.inl {
+    display: inline-block;
+}
+
+.div1 {
+    border: 5px dotted rgba(255, 214, 147, 0.371); 
+    border-top-left-radius: 20px;
+    width: 300px; 
+    height: 300px; 
+    margin: 10px; 
+    /* text-align: center; */
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div2 {
+    border: 5px solid rgba(255, 214, 147, 0.371); 
+    width: 630px; 
+    height: 300px; 
+    float: none; 
+    /* text-align: center; */
+    display: inline-block;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.div3 {
+    border: 5px dashed rgba(255, 214, 147, 0.371); 
+    border-top-right-radius: 20px;
+    width: 300px; 
+    height: 300px; 
+    margin: 10px; 
+    /* text-align: center; */
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+    
+  .divIMGinfo {
+    display: flex;
+    border: 5px dotted rgba(255, 214, 147, 0.371); 
+    width: 300px; 
+    height: 300px; 
+    margin: 10px;
+    /* padding: 10px; */
+  }
+
+  .imgDIV{
+    /* padding-left: 160px;  */
+    display: inline-block; 
+    display: flex;
+    border: 5px dashed rgba(255, 255, 255, 0.281);
+    border-radius: 20px;
+  }
+
+  .login{
+    border: 5px dotted rgba(255, 214, 147, 0.371);
+    height: 300px;
+    width: 400px;
+    margin-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+button {
+    background-color: transparent;
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0);
+    transition: 0.2s;
+    border-top: 0px;
+    border-right: 0px;
+    border-color: rgba(255, 255, 255, 0.348);
+    border-radius: 10px;
+    padding: 10px 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+button:hover {
+    /* transform: translate(0px,-3px); */
+    box-shadow: 0 0px 20px 0 rgb(255, 255, 255);
+  }
+  
+.socialsLogo{
+    display: flex;
+    /* flex-flow: column; */
+    justify-content: center;
+    align-items: center;
+    /* height: 150px; */
+}
+
+.socialsList{
+    /* height: 1000px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.242);
+    text-decoration: none; 
+    color: white;
+    transition: 0.2s;
+}
+a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.242); 
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.passwordInput{
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    height: 30px;
+    width: 282px;
+    border-radius: 5px;
+    padding-left: 10px;
+    /* border: 0px; */
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-color: white;
+    font-family: Andale Mono, monospace;
+}
+
+.passwordInput:focus{
+    border-color: white;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+    transition: 0.2s;
+}
+
+.forms{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ask{
+    /* justify-self: center; */
+    border: 5px dotted rgba(255, 214, 147, 0.371);
+    height: fit-content;
+    width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+
+.buttonAsk{
+  position: absolute;
+  height: inherit;
+}
