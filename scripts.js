@@ -75,12 +75,12 @@ function getDeviceType() {
    
     if (isMobile) {
         // var css = document.getElementById("css");
-        window.alert(css);
+        // window.alert(css);
         window.location.href = 'mobile/index.html';
         return "mobile";
     } else {
         // var css = document.getElementById("css");
-        window.alert(css);
+        // window.alert(css);
         // css.href = "mobileStyles.css";
         // window.location.href = 'mobile/index.html';
         return "desktop";
