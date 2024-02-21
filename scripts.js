@@ -10,35 +10,49 @@ function checkPassword() {
     return false;
 }
 
-
 // var можно поменять, const нельзя
 
 // || - или; && - и;
 
-// var clicks = 0;
-
-// function OnClickButton(el) {
-//     clicks = clicks + 1;
-//     console.log(clicks);
-//     alert("леон" + clicks);
-//     el.innerHTML = "вы нажали кнопку" + clicks;
-// }
-
 var NoSize = 20;
 var YesSize = 20;
+var width = 140;
+var height = 47;
+var divHeight = 545;
 
 function OnMouseOverNo(el) {
-    NoSize = NoSize - 5;
-    el.style.fontSize = NoSize + "px";
-    console.log(el.style.fontSize); 
+    const elRect = el.getBoundingClientRect();
+    const maxX = window.innerWidth - elRect.width;
+    const maxY = window.innerHeight - elRect.height;
+
+    const randomX = Math.floor(Math.random() * maxX);
+    const randomY = Math.floor(Math.random() * maxY);
+
+    el.style.left = randomX + "px";
+    el.style.top = randomY + "px";
     YesSizeButton();
+
 }
 
 function YesSizeButton() {
-    if (NoSize >= 0)   {
+    if (YesSize <= 35)   {
         var el = document.getElementById("YesButton"); 
         YesSize = YesSize + 5;  
+        width = width + 30;
+        height = height + 10;
         el.style.fontSize = YesSize + "px";
+        el.style.width = width + "px";
+        el.style.height = height + "px";
     }
 }
 
+function yesAns() {
+    var el = document.getElementById("gif");
+    el.src = "Que2.jpg";
+    var el = document.getElementById("YesButton");
+    el.style.visibility = "hidden";
+    var el = document.getElementById("NoButton");
+    el.style.visibility = "hidden";
+    var el = document.getElementById("text");
+    el.innerHTML = "в тг)))))))))";
+}
