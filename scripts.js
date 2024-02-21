@@ -8,15 +8,37 @@ function checkPassword() {
     }
     alert("Access denied! Incorrect password or login!");
     return false;
-    }
+}
 
 
 // var можно поменять, const нельзя
 
 // || - или; && - и;
 
-for(var i = 10; i > 5; i --) {
-    console.log(i);
+// var clicks = 0;
+
+// function OnClickButton(el) {
+//     clicks = clicks + 1;
+//     console.log(clicks);
+//     alert("леон" + clicks);
+//     el.innerHTML = "вы нажали кнопку" + clicks;
+// }
+
+var NoSize = 20;
+var YesSize = 20;
+
+function OnMouseOverNo(el) {
+    NoSize = NoSize - 5;
+    el.style.fontSize = NoSize + "px";
+    console.log(el.style.fontSize); 
+    YesSizeButton();
 }
 
-// видео 9
+function YesSizeButton() {
+    if (NoSize >= 0)   {
+        var el = document.getElementById("YesButton"); 
+        YesSize = YesSize + 5;  
+        el.style.fontSize = YesSize + "px";
+    }
+}
+

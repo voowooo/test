@@ -201,3 +201,15 @@ a:hover {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+.ask{
+    /* justify-self: center; */
+    border: 5px dotted rgba(255, 214, 147, 0.371);
+    height: fit-content;
+    width: 400px;
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
