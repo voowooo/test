@@ -1,6 +1,7 @@
 p {
     color: white;
-    font-size: large;
+    font-size: 35px;
+    /* font-size: large; */
     font-weight: bold;
     font-family: Andale Mono, monospace;
 }
@@ -8,7 +9,7 @@ p {
 h2 {
     color:rgb(255, 255, 255);
     /* text-align: center; */
-    /* font-size: 35px; */
+    font-size: 65px;
     margin-left: 10px;
     font-family: cursive;
 }
@@ -47,7 +48,7 @@ img {
     justify-content: space-between;
     align-items: center;
     /* justify-content: center; */
-    border-bottom: 1px solid white;
+    border-bottom: 3px solid white;
 }
 
 .inl {
@@ -57,9 +58,8 @@ img {
 .div1 {
     border: 5px dotted rgba(255, 214, 147, 0.371); 
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 300px; 
-    height: 300px; 
+    width: 400px; 
+    height: 400px; 
     margin: 10px; 
     display: inline-block;
     display: flex;
@@ -69,8 +69,9 @@ img {
 
 .div2 {
     border: 5px solid rgba(255, 214, 147, 0.371); 
-    border-radius: 20px;
-    width: 300px; 
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 839.2px; 
     height: 300px; 
     margin: 10px;
     display: inline-block;
@@ -81,10 +82,9 @@ img {
 
 .div3 {
     border: 5px dashed rgba(255, 214, 147, 0.371); 
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    width: 300px; 
-    height: 300px; 
+    border-top-right-radius: 20px;
+    width: 400px; 
+    height: 400px; 
     margin: 10px; 
     /* text-align: center; */
     display: inline-block;
@@ -104,18 +104,21 @@ img {
   .divIMGinfo {
     display: flex;
     border: 5px dotted rgba(255, 214, 147, 0.371); 
-    width: 300px; 
-    height: 300px; 
+    width: 400px; 
+    height: 400px; 
     margin: 10px;
     /* padding: 10px; */
   }
 
   .imgDIV{
-    /* padding-left: 160px;  */
+    padding: 10px; 
+    margin: 20px;
     /* display: inline-block;  */
-    /* display: flex; */
+    display: flex;
     border: 5px dashed rgba(255, 255, 255, 0.281);
     border-radius: 20px;
+    width: 839.2px; 
+    /* height: 300px;  */
   }
 
   .login{
@@ -138,7 +141,7 @@ button {
     border-color: rgba(255, 255, 255, 0.348);
     border-radius: 10px;
     padding: 10px 15px;
-    font-size: 20px;
+    font-size: 40px;
     color: white;
     font-weight: bold;
   }
