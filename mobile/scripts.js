@@ -15,9 +15,9 @@ function checkPassword() {
 // || - или; && - и;
 
 var NoSize = 20;
-var YesSize = 20;
-var width = 140;
-var height = 47;
+var YesSize = 50;
+var width = 271.583;
+var height = 82.4;
 var divHeight = 370;
 var YesPos1 = 0;
 var NoPosUpd = 0;
@@ -36,8 +36,8 @@ function OnMouseOverNo(el) {
     var YesPos = document.getElementById("YesButton");
     NoPosUpd++;
     if(NoPosUpd <= 1) {
-        YesPos.style.left = 800 + "px";
-        YesPos1 = 800;
+        YesPos.style.left = 550 + "px";
+        YesPos1 = 550;
     } 
     console.log(YesPos);
     
@@ -45,12 +45,12 @@ function OnMouseOverNo(el) {
 }
 
 function YesSizeButton() {
-    if (YesSize <= 35)   {
+    if (YesSize <= 65)   {
         var el = document.getElementById("YesButton"); 
-        YesSize = YesSize + 5;  
-        width = width + 30;
-        height = height + 10;
-        YesPos1 = YesPos1 - 15;
+        YesSize = YesSize + 10;  
+        width = width + 50;
+        height = height + 30;
+        YesPos1 = YesPos1 - 10;
         el.style.fontSize = YesSize + "px";
         el.style.width = width + "px";
         el.style.height = height + "px";

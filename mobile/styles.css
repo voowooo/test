@@ -222,5 +222,5 @@ a:hover {
 
 .buttonAsk{
   position: absolute;
-  height: inherit;
+  /* height: inherit; */
 }
