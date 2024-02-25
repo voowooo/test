@@ -74,24 +74,55 @@ function getDeviceType() {
     const isMobile = /mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent);
    
     if (isMobile) {
-        // var css = document.getElementById("css");
-        // window.alert(css);
         window.location.href = 'mobile/index.html';
         return "mobile";
     } else {
-        // var css = document.getElementById("css");
-        // window.alert(css);
-        // css.href = "mobileStyles.css";
         // window.location.href = 'mobile/index.html';
         return "desktop";
     }
 }
    
-console.log(getDeviceType()); // "mobile" or "desktop"
+console.log(getDeviceType());
 
+var passSumm = null;
+var TruePassSumm = 1235;
 
+function getPass(butt) {
+    var id = butt.id;
+    console.log(butt.id + " var id == " + id);
+    passSumm = passSumm + butt.id;
+    butt.style.background = "blue";
+    console.log(passSumm)
+}
 
-// window.addEventListener('load', () => {
-//     getDeviceType();
-// });
+function clearPass(){
+    var el = document.getElementById("1");
+    el.style.background = "white";
+    var el = document.getElementById("2");
+    el.style.background = "white";
+    var el = document.getElementById("3");
+    el.style.background = "white";
+    var el = document.getElementById("4");
+    el.style.background = "white";
+    var el = document.getElementById("5");
+    el.style.background = "white";
+    var el = document.getElementById("6");
+    el.style.background = "white";
+    var el = document.getElementById("7");
+    el.style.background = "white";
+    var el = document.getElementById("8");
+    el.style.background = "white";
+    var el = document.getElementById("9");
+    el.style.background = "white";
+    passSumm = 0;
+}
+
+function checkPass(){
+    if(passSumm = TruePassSumm){
+        window.location.href = 'CssCode.html';
+    } else {
+        alert("false")
+    }
+}
+
   
