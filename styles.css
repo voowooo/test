@@ -119,12 +119,14 @@ img {
 
   .login{
     border: 5px dotted rgba(255, 214, 147, 0.371);
-    height: 300px;
+    /* height: 300px; */
+    height: auto;
     width: 400px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding: 20px;
     display: flex;
     flex-flow: column;
+    align-items: center;
     justify-content: center;
   }
 
@@ -200,9 +202,11 @@ a:hover {
 .passButt{
     width: 30px;
     height: 30px;
-    background-color: white;
+    background-color: rgb(75, 75, 75);
+    /* background-color: rgb(253, 199, 199); */
     margin: 10px;
     border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0.348);
 }
 
 .forms{
@@ -227,4 +231,24 @@ a:hover {
 .buttonAsk{
   position: absolute;
   height: inherit;
+}
+
+[data-tooltip] {
+    position: relative; /* Относительное позиционирование */ 
+}
+[data-tooltip]::after {
+    content: attr(data-tooltip); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    width: 300px; /* Ширина подсказки */
+    left: 0; top: 0; /* Положение подсказки */
+    background: #000000b7; /* цвет фона */
+    color: #fff; /* Цвет текста */
+    padding: 0.5em; /* Поля вокруг текста */
+    pointer-events: none; /* Подсказка */
+    opacity: 0; /* Подсказка невидима */
+    transition: 1s; /* Время появления подсказки */
+} 
+[data-tooltip]:hover::after {
+    opacity: 67; /* Показываем подсказку */
+    top: 2em; /* Положение подсказки */
 }

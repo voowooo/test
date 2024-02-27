@@ -1,15 +1,3 @@
-function checkPassword() {
-    var password = document.getElementById("passwordBox");
-    var login = document.getElementById("loginBox");
-    var loginText = login.value;
-    var passwordText = password.value;
-    if(passwordText == "1221" & loginText == "jek_a") {
-        return true;
-    }
-    alert("Access denied! Incorrect password or login!");
-    return false;
-}
-
 // var можно поменять, const нельзя
 
 // || - или; && - и;
@@ -84,42 +72,49 @@ function getDeviceType() {
    
 console.log(getDeviceType());
 
-var passSumm = null;
-var TruePassSumm = 1235;
+var passSumm = 0;
+var CorrectPassSumm = 11;
 
 function getPass(butt) {
     var id = butt.id;
     console.log(butt.id + " var id == " + id);
-    passSumm = passSumm + butt.id;
-    butt.style.background = "blue";
+    let str = id;
+    let num = parseInt(str);
+    console.log(num);
+    passSumm = passSumm + num;
+    butt.style.background = "rgb(253, 199, 199)";
     console.log(passSumm)
 }
 
 function clearPass(){
     var el = document.getElementById("1");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("2");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("3");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("4");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("5");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("6");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("7");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("8");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     var el = document.getElementById("9");
-    el.style.background = "white";
+    el.style.background = "rgb(75, 75, 75)";
     passSumm = 0;
+    var login = document.getElementById("login");
+    login.value = "";
 }
 
 function checkPass(){
-    if(passSumm = TruePassSumm){
-        window.location.href = 'CssCode.html';
+    var login = document.getElementById("login");
+    var loginText = login.value;
+    if(passSumm == CorrectPassSumm & loginText == "jek_a709"){
+        window.location.href = 'GoWalk.html';
     } else {
         alert("false")
     }
