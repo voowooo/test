@@ -121,3 +121,15 @@ function checkPass(){
 }
 
   
+
+// REG
+
+var arr = [];
+
+function signIn(){
+    var login = document.getElementById("login");
+    var loginText = login.value;
+    let obj = {name: loginText, age: 25};
+    arr.push(obj);
+    console.log(arr);
+}
