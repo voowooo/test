@@ -84,6 +84,7 @@ function getPass(butt) {
     passSumm = passSumm + num;
     butt.style.background = "rgb(253, 199, 199)";
     console.log(passSumm)
+    butt.setAttribute('disabled', '');
 }
 
 function clearPass(){
