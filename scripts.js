@@ -62,7 +62,7 @@ function getDeviceType() {
     const isMobile = /mobile|iphone|ipad|ipod|android|blackberry|mini|windows\sce|palm/i.test(userAgent);
    
     if (isMobile) {
-        window.location.href = 'mobile/index.html';
+        // window.location.href = 'mobile/index.html';
         return "mobile";
     } else {
         // window.location.href = 'mobile/index.html';
@@ -71,6 +71,20 @@ function getDeviceType() {
 }
    
 console.log(getDeviceType());
+
+
+
+
+
+
+
+
+
+
+
+
+
+// PASSWORD
 
 var passSumm = 0;
 var CorrectPassSumm = 11;
@@ -120,13 +134,22 @@ function clearPass(){
     login.value = "";
 }
 
+
+
+
+
+// LOGIN
 function checkPass(){
     var login = document.getElementById("login");
     var loginText = login.value;
-    if(passSumm == CorrectPassSumm & loginText == "jek_a709"){
+    let check = users.find(user => user.name === loginText)
+    console.log(check);
+    if(check && check.password == passSumm){
         window.location.href = 'GoWalk.html';
+    } else if (check && check.password != passSumm){
+        alert("wrong password")
     } else {
-        alert("false")
+        alert("something went wrong(")
     }
 }
 
@@ -135,17 +158,27 @@ function checkPass(){
 // REG
 var loginBox = document.getElementById("login");
 
-var users = [];
+var users = [
+    { name: "admin", password: 1}
+];
 
 function signIn(){
     var login = loginBox.value;
-    var password = passSumm;
+    let check = users.find(user => user.name === login)
+    console.log(check);
+    if(check){
+        alert("username is already taken");
+    } else {
+        var login = loginBox.value;
+        var password = passSumm;
 
-    let user = {
-        name: login,
-        password: password
-    };
+        let user = {
+            name: login,
+            password: password
+        };
 
-    users.push(user);
-    console.log(users);
+        users.push(user);
+        console.log(users);
+        alert("congratulations!!! you are signed in")
+    }
 }
