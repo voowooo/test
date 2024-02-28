@@ -84,28 +84,37 @@ function getPass(butt) {
     passSumm = passSumm + num;
     butt.style.background = "rgb(253, 199, 199)";
     console.log(passSumm)
-    butt.setAttribute('disabled', '');
+    butt.disabled = true;
 }
 
 function clearPass(){
     var el = document.getElementById("1");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("2");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("3");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("4");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("5");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("6");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("7");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("8");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     var el = document.getElementById("9");
     el.style.background = "rgb(75, 75, 75)";
+    el.disabled = false;
     passSumm = 0;
     var login = document.getElementById("login");
     login.value = "";
@@ -124,13 +133,19 @@ function checkPass(){
   
 
 // REG
+var loginBox = document.getElementById("login");
 
-var arr = [];
+var users = [];
 
 function signIn(){
-    var login = document.getElementById("login");
-    var loginText = login.value;
-    let obj = {name: loginText, age: 25};
-    arr.push(obj);
-    console.log(arr);
+    var login = loginBox.value;
+    var password = passSumm;
+
+    let user = {
+        name: login,
+        password: password
+    };
+
+    users.push(user);
+    console.log(users);
 }
