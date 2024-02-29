@@ -50,6 +50,18 @@ img {
     border-bottom: 1px solid white;
 }
 
+.footer {
+    flex: 0 0 auto;
+    background-color: rgba(0, 0, 0, 0.311);
+    width: 100%;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-content: center; */
+    border-top: 1px solid white;
+}
+
 .inl {
     display: inline-block;
 }
