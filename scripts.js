@@ -48,7 +48,7 @@ function YesSizeButton() {
 
 function yesAns() {
     var el = document.getElementById("gif");
-    el.src = "img/Que2.jpg";
+    el.src = "../img/Que2.jpg";
     var el = document.getElementById("YesButton");
     el.style.visibility = "hidden";
     var el = document.getElementById("NoButton");
