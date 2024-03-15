@@ -32,7 +32,10 @@ html, body {
 body {
     background: linear-gradient(rgb(0, 0, 0), rgb(55, 55, 55)) no-repeat;
     height: 100%;
-    /* display: grid; */
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
 }
 
 img {
@@ -127,6 +130,7 @@ img {
     display: inline-block; 
     display: flex;
     border: 5px dashed rgba(255, 255, 255, 0.281);
+    margin: 10px;
   }
 
   .login{
@@ -264,3 +268,24 @@ a:hover {
     opacity: 67; /* Показываем подсказку */
     top: 2em; /* Положение подсказки */
 }
+
+.runningDiv {
+    /* border: #fff solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+    position: relative;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
